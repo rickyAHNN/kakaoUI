@@ -38,7 +38,7 @@ class secondPage extends StatelessWidget {
           return Container(
             child: Padding(
               padding:
-                  const EdgeInsets.only(top: 5, bottom: 5, left: 5, right: 5),
+                  const EdgeInsets.only(top: 5, bottom: 5, left: 5, right: 10),
               child: Row(
                 children: [
                   CircleAvatar(
@@ -76,30 +76,29 @@ class secondPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 130),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        Text(
-                          '오후 11:38',
-                          style: TextStyle(fontSize: 10),
-                        ),
-                        SizedBox(width: 5),
-                        Stack(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.red,
-                              radius: 13,
-                              child: Text(
-                                '100',
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 13),
-                              ),
+                  //SizedBox(width: 130),
+                  Spacer(),
+                  Column(
+                    children: [
+                      Text(
+                        '오후 11:38',
+                        style: TextStyle(fontSize: 10),
+                      ),
+                      SizedBox(width: 5),
+                      Stack(
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: Colors.red,
+                            radius: 13,
+                            child: Text(
+                              '100',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 13),
                             ),
-                          ],
-                        ),
-                      ],
-                    ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ],
               ),
